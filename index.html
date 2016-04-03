@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment5</title>
+<link rel="stylesheet" type="text/css" href="styles/Assignment5.css" />
+<script src="js/Assignment5.js"></script>
+</head>
+<body>
+<h1>Assignment 5 Order Query</h1>
+<hr>
+<p>
+<select onchange="MenuChoice()" id="SectionMenu">
+    <option>Please Choose A Section</option>
+    <option>Display The First Section</option>
+    <option>Display The Second Section</option>
+    <option>Display The Third Section</option>
+    </select>
+</p>
+<section id="FirstSection" class="FirstSection">
+<h2>
+<hr>
+<br>
+<button onclick="CustomerInfo()" id="CustomerInformation">List Customer Information</button>
+<br>
+<label id="AllCustomersdisplay">Display All Customer Entries</label>
+<br>
+</h2>
+</section>
+<section id="SecondSection" class="SecondSection">
+<h2>
+<hr>
+<label>Please enter a Customer ID History: </label>
+<input type="text" id="custidHistory">
+<br>
+<button onclick="GetHistoryOrders()" id="Historyorders">Get Customer History</button>
+<br>
+<hr>
+<label id="Historydisplay">Display Customer Orders</label>
+<br>
+</h2>
+</section>
+<section id="ThirdSection" class="ThirdSection">
+<h2>
+<hr>
+<label>Please enter a Customer ID: </label>
+<input type="text" id="custid">
+<br>
+<button onclick="GetOrders()" id="orders">Get Customer Orders</button>
+<br>
+<hr>
+<label id="orderdisplay">Display orders here</label>
+</h2>
+</section>
+<br>
+</body>
+</html>
